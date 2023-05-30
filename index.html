@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<!--
-    HTML
-    
-    Hypertext
-        Hiper textos, são textos que aceitam links e audio visual
-    Markup
-        Marcação, feitas com <tags>
-    Language
-        Linguagem
--->
-<html><!-- Tag HTML -->
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <!--Responsável por receber configurções da página-->
     <title>Casa Criativa</title>
+
+    <style>
+        body {
+            background: #e5e5e5;
+            color: #25282b;
+
+            text-align: center;
+        }
+
+        button {
+            color: #ff5e84;
+            border: none;
+            font-weight: bold;
+            background: none;
+        }
+
+        button.fat {
+            color: white;
+            background: #ff5e84;
+        }
+        #footer a {
+            color: #25282b;
+            text-decoration: none;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +40,8 @@
     </p>
 
     <p>
-        Por isso, iremos catalogar ideias, <strong>jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário
+        Por isso, iremos catalogar ideias, <strong>jogos, filmes, livros, cursos, dicas</strong> e tudo que for
+        necessário
         para tornar esse momento mais interessante.
     </p>
 
@@ -34,9 +50,9 @@
     </p>
 
     <button>+ Adicionar Ideia</button>
-    <button>Ver Ideias</button>
+    <button class="fat">Ver Ideias</button>
 
-    <p>Com 💜 Rocketseat</p>
+    <p id="footer">Com 💜 <a href="https://rocketseat.com.br">Rocketseat</a></p>
 
 </body>
 
