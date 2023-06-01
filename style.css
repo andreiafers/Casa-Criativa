@@ -219,3 +219,7 @@ form button:hover{
 
     text-decoration: none;
 }
+
+#modal.hide {
+    display: none;
+}
