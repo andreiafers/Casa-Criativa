@@ -24,10 +24,14 @@
             color: white;
             background: #ff5e84;
         }
+
         #footer a {
             color: #25282b;
             text-decoration: none;
+        }
 
+        .hide {
+            display: none;
         }
     </style>
 </head>
@@ -54,6 +58,17 @@
 
     <p id="footer">Com 💜 <a href="https://rocketseat.com.br">Rocketseat</a></p>
 
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function () {
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+
+    </script>
 </body>
 
 </html>
