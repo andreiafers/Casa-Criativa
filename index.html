@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Casa Criativa</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -47,9 +49,7 @@
 
         <section id="last-ideias">
             <div class="idea">
-                <img 
-                src="https://cdn-icons-png.flaticon.com/128/2729/2729007.png" 
-                alt="Imagem de Curso de Programação">
+                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729007.png" alt="Imagem de Curso de Programação">
 
                 <div class="content">
                     <h3>Cursos de Programação</h3>
@@ -62,9 +62,7 @@
             </div>
 
             <div class="idea">
-                <img 
-                src="https://cdn-icons-png.flaticon.com/128/2729/2729005.png" 
-                alt="Imagem de Exercícios">
+                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729005.png" alt="Imagem de Exercícios">
 
                 <div class="content">
                     <h3>Exercícios</h3>
@@ -75,11 +73,9 @@
                     <a href="#">Ir para a Ideia</a>
                 </div>
             </div>
-            
+
             <div class="idea">
-                <img 
-                src="https://cdn-icons-png.flaticon.com/128/2729/2729027.png" 
-                alt="Imagem de Meditação">
+                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729027.png" alt="Imagem de Meditação">
 
                 <div class="content">
                     <h3>Meditação</h3>
@@ -96,6 +92,44 @@
 
 
     <script src="scripts.js"></script>
+    </div>
+
+    <div id="modal">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Título da ideia</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div id="input-wrapper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="image">
+                </div>
+
+                <button>Salvar</button>
+
+            </form>
+
+        </div>
     </div>
 </body>
 
