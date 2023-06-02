@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 P,
@@ -145,6 +145,8 @@ footer a {
 
     display: flex;
     justify-content: center;
+
+    transition: 400ms;
 }
 
 #modal .content {
