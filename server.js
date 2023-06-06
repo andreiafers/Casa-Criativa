@@ -50,6 +50,8 @@ const db = require("./db")
 
 server.use(express.static("public"))
 
+server.use(express.urlencoded({ extended: true }))
+
 const nunjucks = require("nunjucks")
 
 nunjucks.configure("views", {
@@ -76,10 +78,9 @@ server.get("/", function(req, res) {
     
         return res.render("index.html", { ideas: lastIdeas })
     })
-    })
+})
 
 server.get("/ideias", function(req, res) {
-    
     db.all(`SELECT * FROM ideas`, function(err, rows) {
         if (err) {
             console.log(err)
@@ -90,6 +91,10 @@ server.get("/ideias", function(req, res) {
     })
 
 
+})
+
+server.post("/", function(req, res) {
+    console.log(req.body)
 })
 
 server.listen(3000)
