@@ -1,7 +1,9 @@
 const express = require("express")
 const server = express()
 
-const ideas = [
+const db = require("./db")
+
+/* const ideas = [
     {
         img: "https://cdn-icons-png.flaticon.com/128/2729/2729007.png",
         title: "Cursos de Programação",
@@ -44,7 +46,7 @@ const ideas = [
         description: "Sempre busque ideias que liberem a sua criatividade.",
         url: "https://www.rocketseat.com.br"
     },
-]
+] */
 
 server.use(express.static("public"))
 

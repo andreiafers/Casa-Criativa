@@ -14,7 +14,7 @@ db.serialize(function() {
     );
     `)
     
-    const query = `
+/*     const query = `
     INSERT INTO ideas(
         image,
         title,
@@ -41,5 +41,7 @@ db.serialize(function() {
         if (err) return console.log(err)
 
         console.log(rows)
-    })
+    }) */
 })
+
+module.exports = db
