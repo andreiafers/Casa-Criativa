@@ -51,6 +51,7 @@ const db = require("./db")
 server.use(express.static("public"))
 
 const nunjucks = require("nunjucks")
+
 nunjucks.configure("views", {
     express: server,
     noCache: true,
@@ -58,21 +59,37 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res) {
     
-    const reversedIdeas = [...ideas].reverse()
-
-    let lastIdeas = []
-    for (let idea of reversedIdeas) {
-        if(lastIdeas.length < 2) {
-            lastIdeas.push(idea)
+    db.all(`SELECT * FROM ideas`, function(err, rows) {
+        if (err) {
+            console.log(err)
+            return res.send("Erro no banco de dados!")
         }
-    }
 
-    return res.render("index.html", { ideas: lastIdeas })
-})
+        const reversedIdeas = [...rows].reverse()
+
+        let lastIdeas = []
+        for (let idea of reversedIdeas) {
+            if(lastIdeas.length < 2) {
+                lastIdeas.push(idea)
+            }
+        }
+    
+        return res.render("index.html", { ideas: lastIdeas })
+    })
+    })
 
 server.get("/ideias", function(req, res) {
-    const reversedIdeas = [...ideas].reverse()
-    return res.render("ideias.html", { ideas: reversedIdeas})
+    
+    db.all(`SELECT * FROM ideas`, function(err, rows) {
+        if (err) {
+            console.log(err)
+            return res.send("Erro no banco de dados!")
+        }
+        const reversedIdeas = [...rows].reverse()
+        return res.render("ideias.html", { ideas: reversedIdeas})
+    })
+
+
 })
 
 server.listen(3000)
