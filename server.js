@@ -6,6 +6,7 @@ server.use(express.static("public"))
 const nunjucks = require("nunjucks")
 nunjucks.configure("views", {
     express: server,
+    noCache: true,
 })
 
 server.get("/", function(req, res) {
@@ -16,4 +17,4 @@ server.get("/ideias", function(req, res) {
     return res.render("ideias.html")
 })
 
-server.listen(3000) 
+server.listen(3000)
