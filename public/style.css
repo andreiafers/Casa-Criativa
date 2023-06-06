@@ -146,7 +146,7 @@ footer a {
 #modal {
     background: #ff5e84;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
@@ -204,7 +204,7 @@ form textarea {
 
     outline: none;
 
-    font-size: 14px;
+    font-size: 18px;
 }
 
 form a {
