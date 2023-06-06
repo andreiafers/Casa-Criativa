@@ -49,44 +49,24 @@
         </section>
 
         <section id="last-ideias">
+
+            {% for idea in ideas %}
             <div class="idea">
-                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729007.png" alt="Imagem de Curso de Programação">
+                <img src="{{idea.img}}" alt="Imagem de {{idea.title}}">
 
                 <div class="content">
-                    <h3>Cursos de Programação</h3>
-                    <p>Estudo</p>
+                    <h3>{{idea.title}}</h3>
+                    <p>{{idea.category}}</p>
                     <div class="description">
-                        O mundo está se transformando, então transforme a sua forma de programar o mundo.
+                        {{idea.description}}
                     </div>
-                    <a href="#">Ir para a Ideia</a>
+                    <a href="{{idea.url}}" target="_blank">Ir para a Ideia</a>
                 </div>
             </div>
+            {% endfor %}
 
-            <div class="idea">
-                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729005.png" alt="Imagem de Exercícios">
 
-                <div class="content">
-                    <h3>Exercícios</h3>
-                    <p>Saúde</p>
-                    <div class="description">
-                        A vida é um movimento. Movimente seu corpo para melhorar a sua mente.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
 
-            <div class="idea">
-                <img src="https://cdn-icons-png.flaticon.com/128/2729/2729027.png" alt="Imagem de Meditação">
-
-                <div class="content">
-                    <h3>Meditação</h3>
-                    <p>Mentalidade</p>
-                    <div class="description">
-                        Assim como o corpo a mente busca descanso, meditar ajuda a elevar o seu autoconhecimento.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
         </section>
 
     </div>
