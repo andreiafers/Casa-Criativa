@@ -30,6 +30,20 @@ const ideas = [
         description: "A música transforma a nossa vida, nos faz sonhar, como se estivessemos vivendo uma aventura. Cante!",
         url: "https://www.rocketseat.com.br"
     },
+    {
+        img: "https://cdn-icons-png.flaticon.com/128/2729/2729038.png",
+        title: "Pintura",
+        category: "Criatividade",
+        description: "A arte de colorir a vida do seu jeito.",
+        url: "https://www.rocketseat.com.br"
+    },
+    {
+        img: "https://cdn-icons-png.flaticon.com/128/2729/2729048.png",
+        title: "Recortes",
+        category: "Criatividade",
+        description: "Sempre busque ideias que liberem a sua criatividade.",
+        url: "https://www.rocketseat.com.br"
+    },
 ]
 
 server.use(express.static("public"))
