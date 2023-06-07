@@ -2,7 +2,7 @@
     <div class="content">
         <h1>Nova Ideia</h1>
 
-        <form action="/" method="POST">
+        <form action="/" method="POST" onsubmit="return checkFields(event)">
 
             <div class="input-wrapper">
                 <label for="title">Título da ideia</label>
@@ -29,7 +29,7 @@
                 <input type="url" name="image">
             </div>
 
-            <a href="#" onclick="onOff()">Voltar</a>
+            <a href="" onclick="onOff()">Voltar</a>
             <button>Salvar</button>
 
         </form>
