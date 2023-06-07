@@ -55,4 +55,4 @@ Para rodar a aplicação você deve executar as seguintes tarefas:
 **http://localhost:3000 no seu navagador**
 
 <p align="center">
-Feito por Andréia. ☕
+</p>
