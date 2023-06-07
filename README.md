@@ -19,7 +19,7 @@ O projeto é uma Aplicação Web para adicionar ideias de atividades para fazer 
 
 #### Demonstração do Projeto
 <p align="center">
-    <img src=".github/Casa-Criativa.mp4" alt="Vídeo Demonstração" width="100%" />
+https://github.com/andreiafers/Casa-Criativa/assets/102124994/5ceeac4f-431e-4447-a358-3761c1f403e7
 </p>
 
 Página Inicial
