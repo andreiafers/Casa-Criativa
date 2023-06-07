@@ -17,11 +17,6 @@ O projeto é uma Aplicação Web para adicionar ideias de atividades para fazer 
 
 ## 🏷️ Layout
 
-#### Demonstração do Projeto
-<p align="center">
-    <video src="video/Casa-Criativa.mp4"></video>
-</p>
-
 Página Inicial
 <p align="center">
     <img src=".github/Página-Inicial.png" alt="Imagem da Página Inicial" width="100%" />
