@@ -30,6 +30,7 @@ db.serialize(function() {
         "O mundo está se transformando, então transforme a sua forma de programar o mundo.",
         "https://www.rocketseat.com.br"
     ]
+    
 
     db.run(query, values, function(err) {
         if (err) return console.log(err)
