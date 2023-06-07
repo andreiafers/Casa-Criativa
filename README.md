@@ -56,4 +56,3 @@ Para rodar a aplicação você deve executar as seguintes tarefas:
 
 <p align="center">
 Feito por Andréia. ☕
-</p>
